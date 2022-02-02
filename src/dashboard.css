@@ -1,0 +1,28 @@
+.container { 
+    display: grid;
+    background-color: rgb(201, 201, 201);
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 15vh 85vh;
+    width: 100%;
+    grid-template-areas: "header header"
+                         "sidemenu center-container";
+}
+
+.dash-header {
+    grid-area: header;
+    background-color: rgb(139, 18, 245);
+}
+
+.sidemenu {
+    grid-area: sidemenu;
+    display: flex;
+    flex-direction: column;
+    background-color: skyblue;
+}
+
+.center-container {
+    grid-area: center-container;
+    background-color: rgb(245, 16, 16);
+    padding: 10px 20px 20px 20px;
+    overflow-y: auto;
+}
